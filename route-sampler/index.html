@@ -126,15 +126,53 @@
         return R * c; // Distance in meters
       }
 
-      function drawRoute(route) {
-        const routeCoords = route.map((stop) => [stop.lat, stop.lon]);
+      async function drawRoute(route) {
+        const fullRouteCoords = [];
+
+        for (let i = 0; i < route.length - 1; i++) {
+          const start = route[i];
+          const end = route[i + 1];
+
+          const segmentCoords = await fetchRouteFromAPI(start, end);
+          fullRouteCoords.push(...segmentCoords);
+        }
 
         if (routeLayer) {
           map.removeLayer(routeLayer);
         }
 
-        routeLayer = L.polyline(routeCoords, { color: "blue" }).addTo(map);
+        routeLayer = L.polyline(fullRouteCoords, { color: "blue" }).addTo(map);
         map.fitBounds(routeLayer.getBounds());
+      }
+
+      async function fetchRouteFromAPI(start, end) {
+        const url =
+          "https://api.openrouteservice.org/v2/directions/driving-car/geojson";
+
+        try {
+          const res = await fetch(url, {
+            method: "POST",
+            headers: {
+              Authorization: "API_KEY", // Replace with your OpenRouteService API key
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              coordinates: [
+                [start.lon, start.lat],
+                [end.lon, end.lat],
+              ],
+            }),
+          });
+
+          const data = await res.json();
+          return data.features[0].geometry.coordinates.map(([lon, lat]) => [
+            lat,
+            lon,
+          ]);
+        } catch (err) {
+          console.error("Error fetching route segment:", err);
+          return [];
+        }
       }
     </script>
   </body>
