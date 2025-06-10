@@ -1,0 +1,84 @@
+[
+  {
+    "name": "Route 1: Mahalaxmisthan to Sanepa",
+    "color": "blue",
+    "stops": [
+      { "lat": 27.66139332, "lon": 85.31821974, "name": "mahalaxmisthan" },
+      { "lat": 27.66285736, "lon": 85.31645277, "name": "Thasikhel Chok" },
+      { "lat": 27.66425023, "lon": 85.314392, "name": "Kusunti Bus Stop" },
+      { "lat": 27.66788817, "lon": 85.3068109, "name": "Ekantakunna Bus Stop" },
+      { "lat": 27.68418164, "lon": 85.30168469, "name": "Sanepa Bus Stop" }
+    ]
+  },
+  {
+    "name": "Route 2: Mahalaxmisthan to TU Gate",
+    "color": "red",
+    "stops": [
+      { "lat": 27.66139332, "lon": 85.31821974, "name": "mahalaxmisthan" },
+      { "lat": 27.66285736, "lon": 85.31645277, "name": "Thasikhel Chok" },
+      { "lat": 27.66425023, "lon": 85.314392, "name": "Kusunti Bus Stop" },
+      { "lat": 27.66788817, "lon": 85.3068109, "name": "Ekantakunna Bus Stop" },
+      { "lat": 27.68418164, "lon": 85.30168469, "name": "Sanepa Bus Stop" },
+      { "lat": 27.68425502, "lon": 85.29731729, "name": "Balkhu Wari" },
+      { "lat": 27.6821261, "lon": 85.29843589, "name": "Kumari Club" },
+      { "lat": 27.67886137, "lon": 85.29716181, "name": "TU Gate" }
+    ]
+  },
+  {
+    "name": "Route 3: Sanepa to Kalanki",
+    "color": "green",
+    "stops": [
+      { "lat": 27.68418164, "lon": 85.30168469, "name": "Sanepa Bus Stop" },
+      { "lat": 27.68483792, "lon": 85.2966863, "name": "Balkhu" },
+      {
+        "lat": 27.68826239,
+        "lon": 85.28666049,
+        "name": "Sita Petrol Pump Stop"
+      },
+      { "lat": 27.69398086, "lon": 85.28148487, "name": "Kalanki" }
+    ]
+  },
+  {
+    "name": "Route 4: Sanepa to Ratnapark",
+    "color": "purple",
+    "stops": [
+      { "lat": 27.68418164, "lon": 85.30168469, "name": "Sanepa" },
+      { "lat": 27.68522556, "lon": 85.29816674, "name": "Balkhu Pari" },
+      { "lat": 27.69827038, "lon": 85.29937482, "name": "Kalimati Bus Stop" },
+      { "lat": 27.69630007, "lon": 85.30699268, "name": "Teku" },
+      { "lat": 27.69398864, "lon": 85.31314353, "name": "Tripureswor" },
+      { "lat": 27.70076884, "lon": 85.31336937, "name": "ratnapark" }
+    ]
+  },
+  {
+    "name": "Route 5: Tu Gate to Ratnapark",
+    "color": "orange",
+    "stops": [
+      { "lat": 27.67886137, "lon": 85.29716181, "name": "TU Gate" },
+      { "lat": 27.6821261, "lon": 85.29843589, "name": "Kumari Club" },
+      { "lat": 27.68425502, "lon": 85.29731729, "name": "Balkhu Wari" },
+      { "lat": 27.68522556, "lon": 85.29816674, "name": "Balkhu Pari" },
+      { "lat": 27.69827038, "lon": 85.29937482, "name": "Kalimati Bus Stop" },
+      { "lat": 27.69630007, "lon": 85.30699268, "name": "Teku" },
+      { "lat": 27.69398864, "lon": 85.31314353, "name": "Tripureswor" },
+      { "lat": 27.70076884, "lon": 85.31336937, "name": "ratnapark" }
+    ]
+  },
+  {
+    "name": "Route 6: Mahalaxmisthan to ratnapark",
+    "color": "cyan",
+    "stops": [
+      { "lat": 27.66139332, "lon": 85.31821974, "name": "mahalaxmisthan" },
+      { "lat": 27.66285736, "lon": 85.31645277, "name": "Thasikhel Chok" },
+      { "lat": 27.66425023, "lon": 85.314392, "name": "Kusunti Bus Stop" },
+      { "lat": 27.66788817, "lon": 85.3068109, "name": "Ekantakunna Bus Stop" },
+      { "lat": 27.68418164, "lon": 85.30168469, "name": "Sanepa Bus Stop" },
+      { "lat": 27.68425502, "lon": 85.29731729, "name": "Balkhu Wari" },
+      { "lat": 27.68522556, "lon": 85.29816674, "name": "Balkhu Pari" },
+      { "lat": 27.69827038, "lon": 85.29937482, "name": "Kalimati Bus Stop" },
+      { "lat": 27.69630007, "lon": 85.30699268, "name": "Teku" },
+      { "lat": 27.69398864, "lon": 85.31314353, "name": "Tripureswor" },
+      { "lat": 27.70076884, "lon": 85.31336937, "name": "ratnapark" }
+    ]
+  }
+]

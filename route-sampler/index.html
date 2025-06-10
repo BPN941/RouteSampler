@@ -4,14 +4,10 @@
     <title>Bus Stops Map</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Leaflet CSS -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     />
-
-    <!-- MarkerCluster CSS -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
@@ -20,160 +16,152 @@
       rel="stylesheet"
       href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
     />
-
-    <!-- Your own styles -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h2>Bus Stops in Kathmandu</h2>
     <div id="map"></div>
+    <button id="resetButton">Clear Route</button>
 
-    <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-    <!-- MarkerCluster JS -->
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
     <script>
       const map = L.map("map").setView([27.7, 85.3], 13);
-
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: "&copy; OpenStreetMap contributors",
+        attribution: "© OpenStreetMap contributors",
       }).addTo(map);
 
       const markerCluster = L.markerClusterGroup();
       let selectedStops = [];
       let routeLayer;
+      let predefinedRoutes = [];
 
-      fetch("bus_stops.json")
+      // Load predefined routes
+      fetch("bus_routes.json")
         .then((res) => res.json())
-        .then((data) => {
-          const busStops = data;
+        .then((routes) => {
+          predefinedRoutes = routes;
 
-          busStops.forEach((stop) => {
+          // Extract all unique stops for markers
+          const allStops = [];
+          const stopSet = new Set();
+          routes.forEach((route) => {
+            route.stops.forEach((stop) => {
+              const key = `${stop.lat},${stop.lon}`;
+              if (!stopSet.has(key)) {
+                stopSet.add(key);
+                allStops.push(stop);
+              }
+            });
+          });
+
+          // Add markers for all stops
+          allStops.forEach((stop) => {
             const marker = L.marker([stop.lat, stop.lon]).bindPopup(
               `<strong>${stop.name}</strong>`
             );
-
             marker.on("click", () => {
-              if (selectedStops.length < 2) {
+              if (
+                !selectedStops.some(
+                  (s) => s.lat === stop.lat && s.lon === stop.lon
+                )
+              ) {
                 selectedStops.push(stop);
                 marker.openPopup();
-
-                if (selectedStops.length === 2) {
-                  const [start, end] = selectedStops;
-                  const route = findRoute(busStops, start, end);
-                  drawRoute(route);
-                }
+                updateRoute();
               }
             });
-
             markerCluster.addLayer(marker);
           });
 
           map.addLayer(markerCluster);
         });
 
-      function findRoute(busStops, start, end) {
-        const route = [start];
-        let currentStop = start;
-
-        while (currentStop !== end) {
-          const nearestStop = findNearestStop(busStops, currentStop, route);
-          if (!nearestStop) break; // No path found
-          route.push(nearestStop);
-          currentStop = nearestStop;
+      function updateRoute() {
+        if (selectedStops.length === 2) {
+          const [start, end] = selectedStops;
+          const routeStops = findRouteSubset(start, end);
+          drawRoute(routeStops);
         }
-
-        route.push(end);
-        return route;
       }
 
-      function findNearestStop(busStops, currentStop, visitedStops) {
-        let nearestStop = null;
-        let minDistance = Infinity;
-
-        busStops.forEach((stop) => {
-          if (visitedStops.includes(stop)) return;
-
-          const distance = haversine(
-            [currentStop.lat, currentStop.lon],
-            [stop.lat, stop.lon]
+      function findRouteSubset(start, end) {
+        // Find a predefined route containing both start and end stops
+        for (const route of predefinedRoutes) {
+          const stops = route.stops;
+          const startIndex = stops.findIndex(
+            (s) => s.lat === start.lat && s.lon === start.lon
+          );
+          const endIndex = stops.findIndex(
+            (s) => s.lat === end.lat && s.lon === end.lon
           );
 
-          if (distance < minDistance) {
-            minDistance = distance;
-            nearestStop = stop;
+          if (startIndex !== -1 && endIndex !== -1 && startIndex <= endIndex) {
+            // Return the subset of stops from start to end
+            return stops.slice(startIndex, endIndex + 1);
           }
-        });
+        }
 
-        return nearestStop;
+        // Fallback: direct route if no predefined route found
+        return [start, end];
       }
 
-      function haversine([lat1, lon1], [lat2, lon2]) {
-        const toRad = (deg) => (deg * Math.PI) / 180;
-        const R = 6371e3; // Earth radius in meters
-        const φ1 = toRad(lat1);
-        const φ2 = toRad(lat2);
-        const Δφ = toRad(lat2 - lat1);
-        const Δλ = toRad(lon2 - lon1);
-
-        const a =
-          Math.sin(Δφ / 2) * Math.sin(Δφ / 2) +
-          Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
-        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-
-        return R * c; // Distance in meters
+      function resetRoute() {
+        selectedStops = [];
+        if (routeLayer) {
+          map.removeLayer(routeLayer);
+          routeLayer = null;
+        }
       }
 
-      async function drawRoute(route) {
-        const fullRouteCoords = [];
-
-        for (let i = 0; i < route.length - 1; i++) {
-          const start = route[i];
-          const end = route[i + 1];
-
-          const segmentCoords = await fetchRouteFromAPI(start, end);
-          fullRouteCoords.push(...segmentCoords);
+      async function drawRoute(stops) {
+        const routeCoords = await fetchRouteFromAPI(stops);
+        if (routeCoords.length === 0) {
+          alert(
+            "Unable to fetch route. Please check your API key or try again."
+          );
+          return;
         }
 
         if (routeLayer) {
           map.removeLayer(routeLayer);
         }
 
-        routeLayer = L.polyline(fullRouteCoords, { color: "blue" }).addTo(map);
+        routeLayer = L.polyline(routeCoords, { color: "blue" }).addTo(map);
         map.fitBounds(routeLayer.getBounds());
       }
 
-      async function fetchRouteFromAPI(start, end) {
+      async function fetchRouteFromAPI(stops) {
         const url =
           "https://api.openrouteservice.org/v2/directions/driving-car/geojson";
-
         try {
           const res = await fetch(url, {
             method: "POST",
             headers: {
-              Authorization: "API_KEY", // Replace with your OpenRouteService API key
+              Authorization: "API_KEY", // Replace with a valid key
               "Content-Type": "application/json",
             },
             body: JSON.stringify({
-              coordinates: [
-                [start.lon, start.lat],
-                [end.lon, end.lat],
-              ],
+              coordinates: stops.map((stop) => [stop.lon, stop.lat]),
             }),
           });
 
+          if (!res.ok) throw new Error(`API error: ${res.status}`);
           const data = await res.json();
           return data.features[0].geometry.coordinates.map(([lon, lat]) => [
             lat,
             lon,
           ]);
         } catch (err) {
-          console.error("Error fetching route segment:", err);
+          console.error("Error fetching route:", err);
           return [];
         }
       }
+
+      document
+        .getElementById("resetButton")
+        ?.addEventListener("click", resetRoute);
     </script>
   </body>
 </html>
