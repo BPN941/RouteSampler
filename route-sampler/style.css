@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    margin: 8px;
+  }
+  
+  #map {
+    height: 90vh;
+    width: 100%;
+  }
+  

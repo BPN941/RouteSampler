@@ -2,11 +2,11 @@ const axios = require("axios");
 const haversine = require("haversine-distance");
 const fs = require("fs");
 const { config } = require("dotenv");
-const path=require('path')
+const path = require("path");
 
 config({
-  path:path.resolve(__dirname,'.env')
-})
+  path: path.resolve(__dirname, ".env"),
+});
 
 const apiKey = process.env.API_key;
 const interval = 100; // meters

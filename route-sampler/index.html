@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bus Stops Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+    <!-- MarkerCluster CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
+    />
+
+    <!-- Your own styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Bus Stops in Kathmandu</h2>
+    <div id="map"></div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- MarkerCluster JS -->
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+    <script>
+      const map = L.map("map").setView([27.7, 85.3], 13);
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "&copy; OpenStreetMap contributors",
+      }).addTo(map);
+
+      const markerCluster = L.markerClusterGroup();
+      let selectedStops = [];
+      let routeLayer;
+
+      fetch("bus_stops.json")
+        .then((res) => res.json())
+        .then((data) => {
+          const busStops = data;
+
+          busStops.forEach((stop) => {
+            const marker = L.marker([stop.lat, stop.lon]).bindPopup(
+              `<strong>${stop.name}</strong>`
+            );
+
+            marker.on("click", () => {
+              if (selectedStops.length < 2) {
+                selectedStops.push(stop);
+                marker.openPopup();
+
+                if (selectedStops.length === 2) {
+                  const [start, end] = selectedStops;
+                  const route = findRoute(busStops, start, end);
+                  drawRoute(route);
+                }
+              }
+            });
+
+            markerCluster.addLayer(marker);
+          });
+
+          map.addLayer(markerCluster);
+        });
+
+      function findRoute(busStops, start, end) {
+        const route = [start];
+        let currentStop = start;
+
+        while (currentStop !== end) {
+          const nearestStop = findNearestStop(busStops, currentStop, route);
+          if (!nearestStop) break; // No path found
+          route.push(nearestStop);
+          currentStop = nearestStop;
+        }
+
+        route.push(end);
+        return route;
+      }
+
+      function findNearestStop(busStops, currentStop, visitedStops) {
+        let nearestStop = null;
+        let minDistance = Infinity;
+
+        busStops.forEach((stop) => {
+          if (visitedStops.includes(stop)) return;
+
+          const distance = haversine(
+            [currentStop.lat, currentStop.lon],
+            [stop.lat, stop.lon]
+          );
+
+          if (distance < minDistance) {
+            minDistance = distance;
+            nearestStop = stop;
+          }
+        });
+
+        return nearestStop;
+      }
+
+      function haversine([lat1, lon1], [lat2, lon2]) {
+        const toRad = (deg) => (deg * Math.PI) / 180;
+        const R = 6371e3; // Earth radius in meters
+        const φ1 = toRad(lat1);
+        const φ2 = toRad(lat2);
+        const Δφ = toRad(lat2 - lat1);
+        const Δλ = toRad(lon2 - lon1);
+
+        const a =
+          Math.sin(Δφ / 2) * Math.sin(Δφ / 2) +
+          Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+
+        return R * c; // Distance in meters
+      }
+
+      function drawRoute(route) {
+        const routeCoords = route.map((stop) => [stop.lat, stop.lon]);
+
+        if (routeLayer) {
+          map.removeLayer(routeLayer);
+        }
+
+        routeLayer = L.polyline(routeCoords, { color: "blue" }).addTo(map);
+        map.fitBounds(routeLayer.getBounds());
+      }
+    </script>
+  </body>
+</html>

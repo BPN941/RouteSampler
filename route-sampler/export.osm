@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="UTF-8"?><osm version="0.6" generator="Overpass API 0.7.62.5 1bd436f1">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2025-05-29T04:55:31Z"/>
+
+  <node id="268116939" lat="27.7188423" lon="85.3095996">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Sorhakhutte"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="296344440" lat="27.7159831" lon="85.2835588">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Swayambu stop"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="360712029" lat="27.6942173" lon="85.3712474">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Pepsi Last Stop"/>
+    <tag k="name:en" v="Suncity chowk"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="457275859" lat="27.6651547" lon="85.3897720">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Harsha Chowk"/>
+    <tag k="name:ne" v="हर्ष चोक"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="670651214" lat="27.6879843" lon="85.3162249">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Kupondol stop"/>
+    <tag k="name:en" v="Kupondole bus stop"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="670654518" lat="27.6732666" lon="85.3135375">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Jawalakhel"/>
+  </node>
+  <node id="724363694" lat="27.6997042" lon="85.3139878">
+    <tag k="bench" v="no"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="shelter" v="yes"/>
+  </node>
+  <node id="764927361" lat="27.6845309" lon="85.3018585">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Sanepa"/>
+  </node>
+  <node id="764927442" lat="27.6849132" lon="85.2986117">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Balkhu"/>
+  </node>
+  <node id="845503448" lat="27.7335107" lon="85.3085025">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="To Besi sihara"/>
+    <tag k="note" v="25&amp;27 ticket window"/>
+  </node>
+  <node id="913398284" lat="27.6787869" lon="85.2971844">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="TU Gate"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="913398317" lat="27.6747581" lon="85.2804077">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Panga Dobato"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="913398439" lat="27.6766823" lon="85.2835298">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Tinkune"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="1124397505" lat="27.6747945" lon="85.2777568">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Nagaon Dobato"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="1143907471" lat="27.7282299" lon="85.3460335">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Sukedhara"/>
+  </node>
+  <node id="1380061612" lat="27.6507798" lon="85.3558749">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="local_ref" v="Sano gaun Bus Stop"/>
+    <tag k="name" v="Chanacho Bus stop"/>
+    <tag k="name:en" v="Chanacho Bus Stop, Siddhipur"/>
+    <tag k="operator" v="Siddhipur"/>
+  </node>
+  <node id="1380064332" lat="27.6428790" lon="85.3733557">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Lubhu Bus Stop"/>
+    <tag k="name:en" v="Shyam store lubhu"/>
+    <tag k="operator" v="shyam store lubhu"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="1399507923" lat="27.7069661" lon="85.3226211">
+    <tag k="bench" v="no"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="lit" v="no"/>
+    <tag k="name" v="Putali Sadak"/>
+    <tag k="shelter" v="no"/>
+  </node>
+  <node id="1496573247" lat="27.6666354" lon="85.3083104">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Ekantakuna"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="1496573304" lat="27.6726494" lon="85.3132419">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="1496627058" lat="27.6688752" lon="85.3062936">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Nakhu Dobato"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="1497159559" lat="27.7038843" lon="85.3328860">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="maitidevi bus stop"/>
+  </node>
+  <node id="1497194463" lat="27.7074532" lon="85.2824928">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Sitapaila Stop"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="1497194467" lat="27.7248456" lon="85.2978068">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="1497531313" lat="27.6285862" lon="85.3039386">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="1523307368" lat="27.7273703" lon="85.3569382">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="junction" v="yes"/>
+    <tag k="name" v="Bhrikuti Chok"/>
+    <tag k="name:en" v="Bhrikuti Chwok"/>
+  </node>
+  <node id="1622172127" lat="27.7191991" lon="85.3068971">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="1835392131" lat="27.6961576" lon="85.3701951">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Gandhi Chowk"/>
+  </node>
+  <node id="1845683513" lat="27.6922923" lon="85.3361926">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Eyeplex Mall Bus Stop"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="1867049520" lat="27.7634581" lon="85.3115247">
+    <tag k="bench" v="no"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Phutung Secondary School Bus Stop"/>
+    <tag k="shelter" v="no"/>
+    <tag k="tactile_paving" v="no"/>
+  </node>
+  <node id="1875745723" lat="27.7349404" lon="85.3146154">
+    <tag k="amenity" v="parking"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Gongabu Chowk"/>
+  </node>
+  <node id="1886633796" lat="27.7245976" lon="85.3308860">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="1892816724" lat="27.6703044" lon="85.3381309">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="kharibot bus stop"/>
+  </node>
+  <node id="1898593311" lat="27.7169187" lon="85.3303697">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Tangal Bus stop"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="1945933025" lat="27.7399704" lon="85.3372283">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Narayan Gopal Chowk"/>
+    <tag k="shelter" v="no"/>
+  </node>
+  <node id="1960042856" lat="27.6744470" lon="85.3642839">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="kausaltar"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="1960744390" lat="27.6761142" lon="85.2938967">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Naya Bato"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="1960744496" lat="27.6826476" lon="85.2985509">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Kumari Club"/>
+    <tag k="public_transport" v="bus_stop"/>
+  </node>
+  <node id="1965646270" lat="27.6770776" lon="85.2819463">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Naya Bazar"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="2051114285" lat="27.6748479" lon="85.3597961">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Lokanthali"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="2051114289" lat="27.6745787" lon="85.3642978">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="kausaltar"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="2077260194" lat="27.7356261" lon="85.3211982">
+    <tag k="bench" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="shelter" v="yes"/>
+  </node>
+  <node id="2078703766" lat="27.7458060" lon="85.3275110">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Dhapasi Micro Stop"/>
+  </node>
+  <node id="2090601791" lat="27.7181961" lon="85.3174196">
+    <tag k="bench" v="no"/>
+    <tag k="bin" v="no"/>
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="lit" v="yes"/>
+    <tag k="public_transport" v="platform"/>
+    <tag k="shelter" v="no"/>
+  </node>
+  <node id="2127168043" lat="27.7171421" lon="85.3150735">
+    <tag k="bench" v="yes"/>
+    <tag k="bin" v="no"/>
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="lit" v="yes"/>
+    <tag k="name" v="Lainchowr Bus Station"/>
+    <tag k="public_transport" v="platform"/>
+    <tag k="shelter" v="yes"/>
+    <tag k="wheelchair" v="yes"/>
+  </node>
+  <node id="2129636469" lat="27.6811429" lon="85.3315778">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="tempo-micro last stop"/>
+  </node>
+  <node id="2165424725" lat="27.6947007" lon="85.3112710">
+    <tag k="bench" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="local_ref" v="Bus stop"/>
+    <tag k="name:en" v="12 to Kirtipur"/>
+    <tag k="shelter" v="yes"/>
+  </node>
+  <node id="2166417333" lat="27.6934425" lon="85.3145628">
+    <tag k="bin" v="no"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="local_ref" v="Tripureshwar Bus Stop"/>
+    <tag k="shelter" v="yes"/>
+  </node>
+  <node id="2166427223" lat="27.6982946" lon="85.2995431">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Kalimati Bus Stop"/>
+  </node>
+  <node id="2168945129" lat="27.6958552" lon="85.3750106">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Laure Chwok"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="2168961146" lat="27.6992892" lon="85.3829983">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="2207719957" lat="27.7197605" lon="85.2869099">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="ठुलो भर्यांङ"/>
+    <tag k="name:en" v="Thulo Bharyang"/>
+    <tag k="name:ne" v="ठुलो भर्यांङ"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="2224261937" lat="27.6729035" lon="85.3340263">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="local_ref" v="Bus Park"/>
+    <tag k="name" v="New Bus Park"/>
+  </node>
+  <node id="2249140882" lat="27.6755145" lon="85.3514564">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="local_ref" v="Jadibuti Bus Stop"/>
+    <tag k="name:en" v="jadibuti"/>
+  </node>
+  <node id="2249140889" lat="27.6750818" lon="85.3541483">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="2336918671" lat="27.6130519" lon="85.2647075">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Pharping"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="2376855283" lat="27.7406116" lon="85.3904151">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Gokarna Bus Stop"/>
+  </node>
+  <node id="2396022574" lat="27.7362631" lon="85.3476740">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Mandikhatar Stop"/>
+  </node>
+  <node id="2433619344" lat="27.6732593" lon="85.3864013">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Thimi"/>
+    <tag k="name:en" v="Micro bus station"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="2516894316" lat="27.6597322" lon="85.3065417">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="2858938377" lat="27.6953887" lon="85.2813459">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="source" v="GPS"/>
+  </node>
+  <node id="2858938378" lat="27.6843335" lon="85.3001006">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="source" v="GPS"/>
+  </node>
+  <node id="2968523086" lat="27.7241600" lon="85.3311300">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Baluwatar Bus Stop"/>
+  </node>
+  <node id="3074566733" lat="27.7175155" lon="85.3465761">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="3074581508" lat="27.7106276" lon="85.3443989">
+    <tag k="bench" v="no"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="shelter" v="no"/>
+  </node>
+  <node id="3074584433" lat="27.7178774" lon="85.3478852">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="3074602191" lat="27.7180046" lon="85.3471102">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="3079593334" lat="27.6497973" lon="85.3589436">
+    <tag k="addr:street" v="Gwarko-Lamatar"/>
+    <tag k="amenity" v="bus_station"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="School Bus Stop"/>
+    <tag k="name:en" v="Ghyampapati (School Chok), Siddhipur"/>
+  </node>
+  <node id="3100402540" lat="27.6445469" lon="85.3600880">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="chadobato"/>
+    <tag k="public_transport" v="station"/>
+  </node>
+  <node id="3322873041" lat="27.7092826" lon="85.3166186">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Kantipath"/>
+    <tag k="name:en" v="bus to Boudanath"/>
+    <tag k="name:zh" v="公交车站，去博尔克"/>
+  </node>
+  <node id="3461553725" lat="27.6798724" lon="85.3493503">
+    <tag k="bench" v="yes"/>
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Koteshwar Bus Stop"/>
+    <tag k="name:en" v="Koteshwar Bus Stop"/>
+    <tag k="operator" v="Public"/>
+    <tag k="public_transport" v="platform"/>
+    <tag k="shelter" v="yes"/>
+  </node>
+  <node id="3461553726" lat="27.6911057" lon="85.3264159">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="3487894529" lat="27.7221719" lon="85.2769086">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="local_ref" v="Gairi Gaun Bus Stop"/>
+    <tag k="name:en" v="Gairigaon Bus Station"/>
+  </node>
+  <node id="3514839204" lat="27.7777491" lon="85.2778483">
+    <tag k="bench" v="yes"/>
+    <tag k="covered" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Tinpiple"/>
+    <tag k="shelter" v="yes"/>
+  </node>
+  <node id="3766699542" lat="27.6815944" lon="85.3878207">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Madhyapur Yatayat"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="3766701674" lat="27.7421779" lon="85.3325764">
+    <tag k="bench" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Basundhara Bus Stop"/>
+    <tag k="name:en" v="Basundhara Bus Stop"/>
+    <tag k="shelter" v="yes"/>
+  </node>
+  <node id="3806463148" lat="27.7235413" lon="85.2945540">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Dhungedhara"/>
+    <tag k="name:en" v="Yerahiti"/>
+    <tag k="shelter" v="yes"/>
+  </node>
+  <node id="3811339812" lat="27.7219199" lon="85.3731337">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Jorpati Oralo Bus Stop"/>
+  </node>
+  <node id="4030822684" lat="27.6790415" lon="85.3497204">
+    <tag k="bench" v="yes"/>
+    <tag k="bus" v="yes"/>
+    <tag k="departures_board" v="no"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Koteshwar Bus Stop"/>
+    <tag k="name:en" v="Koteshwar Bus Stop"/>
+    <tag k="operator" v="Public"/>
+    <tag k="public_transport" v="platform"/>
+    <tag k="shelter" v="yes"/>
+  </node>
+  <node id="4109691391" lat="27.6956655" lon="85.3531429">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Sinamangal"/>
+  </node>
+  <node id="4135808094" lat="27.6993514" lon="85.3289500">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Nepal Yatayat Anamnagar"/>
+    <tag k="name:en" v="Anamnagar 2nd point"/>
+  </node>
+  <node id="4141131095" lat="27.7039253" lon="85.3328212">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Maitidevi"/>
+  </node>
+  <node id="4204194789" lat="27.7005956" lon="85.3234849">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Newplaza"/>
+  </node>
+  <node id="4206479489" lat="27.6923015" lon="85.3455249">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="तिनकुने"/>
+    <tag k="name:en" v="tinkune"/>
+  </node>
+  <node id="4264032498" lat="27.6877235" lon="85.3769521">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="madhu chok bus stop"/>
+  </node>
+  <node id="4264061873" lat="27.6746670" lon="85.3599158">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="lokanthali bus stop"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="4266695860" lat="27.7308707" lon="85.2939807">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Kharibot Micro Station"/>
+  </node>
+  <node id="4275708292" lat="27.6754407" lon="85.3529611">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="jadibuti"/>
+  </node>
+  <node id="4282180975" lat="27.6748983" lon="85.3598076">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="lokanthali bus stop"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="4311377589" lat="27.7116683" lon="85.3651234">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="4325142495" lat="27.7504508" lon="85.3179680">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Baluwapaati Chowk"/>
+  </node>
+  <node id="4342388789" lat="27.6829600" lon="85.3863813">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Madhyapur Bus Stop"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="4342984792" lat="27.7045119" lon="85.2819731">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Soltidobato"/>
+  </node>
+  <node id="4360781393" lat="27.6830903" lon="85.3875887">
+    <tag k="bench" v="no"/>
+    <tag k="bin" v="no"/>
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="lit" v="yes"/>
+    <tag k="name" v="Bhaktapur Bus Stop"/>
+    <tag k="public_transport" v="platform"/>
+    <tag k="shelter" v="no"/>
+  </node>
+  <node id="4366575209" lat="27.7025429" lon="85.3165765">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="wheelchair" v="limited"/>
+  </node>
+  <node id="4407978700" lat="27.7358872" lon="85.3552529">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Aakashedhara"/>
+  </node>
+  <node id="4424933192" lat="27.6879968" lon="85.3743411">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Magar Gaun Chowk"/>
+  </node>
+  <node id="4428730600" lat="27.6972036" lon="85.3505567">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Tara Hall Chok"/>
+  </node>
+  <node id="4465559091" lat="27.7470420" lon="85.3242737">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Greenland Micro Stand"/>
+  </node>
+  <node id="4478271593" lat="27.6779470" lon="85.3162155">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="4505901091" lat="27.6703694" lon="85.2905385">
+    <tag k="bench" v="no"/>
+    <tag k="bin" v="no"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="lit" v="no"/>
+    <tag k="name" v="Chovar Gate Bus Stop"/>
+    <tag k="shelter" v="no"/>
+  </node>
+  <node id="4522659390" lat="27.7715023" lon="85.3587987">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Rudreshwor Chowk"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="4522706689" lat="27.7675558" lon="85.3556552">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Chapali Chok"/>
+  </node>
+  <node id="4539565993" lat="27.7129607" lon="85.2897532">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Kimdol chowk"/>
+  </node>
+  <node id="4557994789" lat="27.7353524" lon="85.3642563">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Kharibot chowk"/>
+  </node>
+  <node id="4557994889" lat="27.7382626" lon="85.3622358">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Adhikari chowk"/>
+  </node>
+  <node id="4561899390" lat="27.6734413" lon="85.3421630">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Balkumari, koteshwor bus stop"/>
+  </node>
+  <node id="4561910892" lat="27.6708982" lon="85.3397300">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Balkumari Bus Stop"/>
+  </node>
+  <node id="4563700497" lat="27.6503981" lon="85.3828295">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Chardobato"/>
+  </node>
+  <node id="4564492989" lat="27.6875508" lon="85.3803031">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="historic" v="memorial"/>
+    <tag k="name:en" v="Purnakhar Chowk"/>
+  </node>
+  <node id="4567394790" lat="27.7570060" lon="85.3494245">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Hattigauda Chowk"/>
+  </node>
+  <node id="4585338298" lat="27.6783042" lon="85.3389673">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="mobile" v="9841539000"/>
+    <tag k="name" v="Sarus Beauty Parlour And Cosmetic Training Center"/>
+    <tag k="name:en" v="Micro bus stop"/>
+    <tag k="shop" v="cosmetics"/>
+  </node>
+  <node id="4591191990" lat="27.7320817" lon="85.3623666">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Faika Chowk"/>
+  </node>
+  <node id="4607638798" lat="27.7366406" lon="85.3019049">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Lekhnath Sadak"/>
+  </node>
+  <node id="4615652290" lat="27.6986119" lon="85.3455240">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="operator" v="gh"/>
+  </node>
+  <node id="4663104190" lat="27.7780861" lon="85.3610409">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Milanchok, Sajha Bus Station Budhanilkantha"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="4671940789" lat="27.7276946" lon="85.3171184">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="imadoll"/>
+  </node>
+  <node id="4677489699" lat="27.6578462" lon="85.3225256">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Chapagaun dobato"/>
+  </node>
+  <node id="4689758517" lat="27.7353426" lon="85.3552067">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="aakashedhara"/>
+    <tag k="name:hi" v="आकाशेधारा चोक"/>
+  </node>
+  <node id="4731419521" lat="27.7129627" lon="85.3054371">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="4731430521" lat="27.7362397" lon="85.3644081">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="अानी गुम्बा चाेक(aani gumba chok)"/>
+  </node>
+  <node id="4744832122" lat="27.6868986" lon="85.2512353">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Satungal Chowk"/>
+  </node>
+  <node id="4744929622" lat="27.6832391" lon="85.2485778">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Buddha Chowk"/>
+  </node>
+  <node id="4746324222" lat="27.6830816" lon="85.2476195">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Kanchanbasti Gate"/>
+  </node>
+  <node id="4747204424" lat="27.6807720" lon="85.2432277">
+    <tag k="bench" v="yes"/>
+    <tag k="bin" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Kanchanbasti Gate"/>
+    <tag k="operator" v="subway to gurjudhara"/>
+    <tag k="shelter" v="no"/>
+  </node>
+  <node id="4766617731" lat="27.6761959" lon="85.3158001">
+    <tag k="bench" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Pulchowk Bus Stop"/>
+    <tag k="shelter" v="yes"/>
+  </node>
+  <node id="4784205922" lat="27.7190905" lon="85.3502778">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Chuchepati bus stop"/>
+    <tag k="name:ja" v="チュチェパティバス停"/>
+    <tag k="shelter" v="no"/>
+  </node>
+  <node id="4803483428" lat="27.6891853" lon="85.3603656">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Pepsicola Chowk"/>
+  </node>
+  <node id="4803502724" lat="27.6967912" lon="85.3663548">
+    <tag k="bench" v="yes"/>
+    <tag k="bin" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Khahare Chowk"/>
+  </node>
+  <node id="4807883223" lat="27.6887343" lon="85.3789196">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Dhuncha height"/>
+  </node>
+  <node id="4808763721" lat="27.6827881" lon="85.3021862">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Jhamsikhel"/>
+  </node>
+  <node id="4821801221" lat="27.6903575" lon="85.3177572">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="4822982221" lat="27.6771335" lon="85.2398359">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Bauthali chock"/>
+  </node>
+  <node id="4824360524" lat="27.7134011" lon="85.3187487">
+    <tag k="bench" v="no"/>
+    <tag k="bin" v="no"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="lit" v="yes"/>
+    <tag k="shelter" v="no"/>
+  </node>
+  <node id="4834526521" lat="27.7192324" lon="85.3182080">
+    <tag k="bus" v="yes"/>
+    <tag k="check_date:shelter" v="2023-06-16"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Lazimpat Bus Stop"/>
+    <tag k="public_transport" v="platform"/>
+    <tag k="shelter" v="yes"/>
+  </node>
+  <node id="4851758928" lat="27.7099805" lon="85.3260604">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Kamalpokhari Bus Stop"/>
+    <tag k="public_transport" v="platform"/>
+    <tag k="shelter" v="no"/>
+  </node>
+  <node id="4903081921" lat="27.6939710" lon="85.3193479">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Maitighar Bus Stop"/>
+  </node>
+  <node id="4903082021" lat="27.6900842" lon="85.3175552">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Thapathali bus stop"/>
+    <tag k="shelter" v="yes"/>
+  </node>
+  <node id="4903082022" lat="27.6810897" lon="85.3176495">
+    <tag k="bench" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Krishnagalli Bus Stop"/>
+    <tag k="name:en" v="Krishnagalli Bus Stop"/>
+    <tag k="shelter" v="yes"/>
+  </node>
+  <node id="4903082023" lat="27.6807853" lon="85.3174030">
+    <tag k="bench" v="no"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Krishna galli bus stop"/>
+    <tag k="shelter" v="no"/>
+  </node>
+  <node id="4916056821" lat="27.6883306" lon="85.3348522">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="New Baneshwar bus stop"/>
+  </node>
+  <node id="4920024521" lat="27.7349479" lon="85.3422900">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Chappal Karkhana Bus Stop"/>
+  </node>
+  <node id="4934957627" lat="27.7671617" lon="85.2971629">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Sanu Bypass"/>
+    <tag k="operator" v="Bus station"/>
+  </node>
+  <node id="4934957628" lat="27.7724302" lon="85.2879278">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Chisapani"/>
+    <tag k="operator" v="MICRO Bus  Stop"/>
+  </node>
+  <node id="4940227523" lat="27.7087545" lon="85.3146285">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Jamal Chowk"/>
+  </node>
+  <node id="4954663823" lat="27.7393598" lon="85.3533177">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="एकता बस्ती बस स्टॉप"/>
+  </node>
+  <node id="5081406121" lat="27.7069046" lon="85.3447142">
+    <tag k="bench" v="yes"/>
+    <tag k="bin" v="no"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="lit" v="yes"/>
+    <tag k="name" v="Gaushala bus stop"/>
+    <tag k="shelter" v="yes"/>
+  </node>
+  <node id="5086421321" lat="27.7335948" lon="85.3476608">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Ramcha chowk"/>
+  </node>
+  <node id="5104363922" lat="27.7162615" lon="85.3966269">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Barpipal"/>
+  </node>
+  <node id="5109126723" lat="27.7213881" lon="85.2799852">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Milan Chowk"/>
+  </node>
+  <node id="5164329522" lat="27.7328291" lon="85.3811137">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="NMC chowk"/>
+  </node>
+  <node id="5169208223" lat="27.7215186" lon="85.3716256">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Chamunda gate"/>
+  </node>
+  <node id="5169208333" lat="27.7170154" lon="85.3466126">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Chabhahil Chowk"/>
+    <tag k="name:en" v="Chabahil"/>
+  </node>
+  <node id="5172870222" lat="27.7218394" lon="85.3726548">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Jorpati chowk"/>
+  </node>
+  <node id="5181221232" lat="27.7319470" lon="85.3442753">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Dhumbaharai chock"/>
+  </node>
+  <node id="5183486523" lat="27.6754504" lon="85.3510700">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Jadibuti bus stop"/>
+  </node>
+  <node id="5185321923" lat="27.6747008" lon="85.3977182">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Radhe radhe"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="5204346222" lat="27.6732928" lon="85.3421010">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Balkumari Pul Bus stop बालकुमारी बस स्टप६६७"/>
+    <tag k="operator" v="नेपाल यातायात"/>
+  </node>
+  <node id="5275131022" lat="27.6800708" lon="85.3985322">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Gankhu dharamapur bus stop chowk"/>
+  </node>
+  <node id="5285665821" lat="27.6744942" lon="85.3975075">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Araniko heihway_ radheradhe"/>
+  </node>
+  <node id="5285665822" lat="27.6746309" lon="85.3978154">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="cuisine" v="pizza"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Pizza Hut, Thimi Branch"/>
+    <tag k="name:en" v="Arniko heighway_radheradhe chok_gankhu dhrampur way"/>
+  </node>
+  <node id="5285665921" lat="27.6747765" lon="85.3977300">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Radheradhe chowk_way to gankhu dharamapur"/>
+  </node>
+  <node id="5300595236" lat="27.6739274" lon="85.3141864">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="sajha bus stop"/>
+  </node>
+  <node id="5343032833" lat="27.7923896" lon="85.2441540">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="5362570123" lat="27.7072377" lon="85.2825515">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Sitapaila"/>
+  </node>
+  <node id="5367652205" lat="27.6899702" lon="85.3357427">
+    <tag k="bench" v="yes"/>
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Baneshwar Bus Station"/>
+    <tag k="public_transport" v="platform"/>
+    <tag k="shelter" v="yes"/>
+  </node>
+  <node id="5463896524" lat="27.7798812" lon="85.3039765">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Debasthali"/>
+  </node>
+  <node id="5463914623" lat="27.7724404" lon="85.3068130">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Bhedi Goth"/>
+  </node>
+  <node id="5463914624" lat="27.7627312" lon="85.3032224">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Dhakaltar"/>
+  </node>
+  <node id="5463917122" lat="27.7680456" lon="85.3048436">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Padamsal"/>
+  </node>
+  <node id="5463917222" lat="27.7828651" lon="85.3011696">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Dobato"/>
+  </node>
+  <node id="5528676227" lat="27.7204885" lon="85.3461547">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="5529727021" lat="27.7298578" lon="85.3551377">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Milan Chok"/>
+  </node>
+  <node id="5532464421" lat="27.6828969" lon="85.3858055">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Nagadesh Bus Stop"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="5538962121" lat="27.6968249" lon="85.3058547">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Teku Bus Stop"/>
+  </node>
+  <node id="5619165231" lat="27.7255766" lon="85.3560936">
+    <tag k="amenity" v="shelter"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="महङ्काल"/>
+    <tag k="name:en" v="mahankaal"/>
+    <tag k="name:ne" v="महङ्काल"/>
+    <tag k="operator" v="Suman"/>
+  </node>
+  <node id="5720133821" lat="27.7064893" lon="85.3145160">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Ratna Park"/>
+  </node>
+  <node id="5760423284" lat="27.6176749" lon="85.3195754">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Dhapakhel"/>
+  </node>
+  <node id="5760427451" lat="27.6153601" lon="85.3192386">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Thecho VDC"/>
+  </node>
+  <node id="5763196953" lat="27.6156678" lon="85.3191974">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Thecho VDC"/>
+  </node>
+  <node id="5784633469" lat="27.7260406" lon="85.3049970">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Balaju Chowk Bus Stop"/>
+  </node>
+  <node id="5821878253" lat="27.6929997" lon="85.2807811">
+    <tag k="bus" v="yes"/>
+    <tag k="departures_board" v="timetable"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Kalanki Long Distance Bus-stop"/>
+    <tag k="name:en" v="Late Bus or Minis to Pokhara, etc."/>
+    <tag k="public_transport" v="platform"/>
+    <tag k="shelter" v="no"/>
+  </node>
+  <node id="5864596986" lat="27.7185446" lon="85.3082196">
+    <tag k="bench" v="no"/>
+    <tag k="bin" v="no"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="lit" v="yes"/>
+    <tag k="name:en" v="Pokhara Tourist Bus"/>
+    <tag k="shelter" v="no"/>
+  </node>
+  <node id="5899752385" lat="27.6829661" lon="85.2473277">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Dhaulagiri Gate"/>
+  </node>
+  <node id="5907660838" lat="27.7087535" lon="85.3312930">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Mahanagar and Sajha Yatayat;Local Bus stand"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="6052881691" lat="27.6990751" lon="85.2814445">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Syuchatar"/>
+  </node>
+  <node id="6053557887" lat="27.7002299" lon="85.2817551">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Bafal"/>
+  </node>
+  <node id="6100126497" lat="27.7169528" lon="85.3048394">
+    <tag k="bench" v="no"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Greenline Bus Stop"/>
+    <tag k="shelter" v="no"/>
+  </node>
+  <node id="6119569890" lat="27.6990324" lon="85.2814676">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Syuchatar"/>
+  </node>
+  <node id="6167683585" lat="27.6490356" lon="85.3115738">
+    <tag k="bench" v="no"/>
+    <tag k="bin" v="no"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Nakkhudole"/>
+    <tag k="shelter" v="no"/>
+  </node>
+  <node id="6210447185" lat="27.7608491" lon="85.3519611">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Ganesh School Chowk"/>
+  </node>
+  <node id="6292460185" lat="27.7403141" lon="85.3877422">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Hanumanchok"/>
+  </node>
+  <node id="6358111386" lat="27.7338434" lon="85.3626967">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Gyanu Rana Chok"/>
+  </node>
+  <node id="6379886785" lat="27.7440965" lon="85.3003106">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Sesmati Bus Stop"/>
+  </node>
+  <node id="6440259386" lat="27.6920051" lon="85.2823352">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="6464288786" lat="27.6974103" lon="85.3706002">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="khasi mod"/>
+  </node>
+  <node id="6482645186" lat="27.7191973" lon="85.3125262">
+    <tag k="bench" v="no"/>
+    <tag k="bin" v="no"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="lit" v="yes"/>
+    <tag k="name:en" v="Micro bus to Banyitar"/>
+    <tag k="shelter" v="no"/>
+  </node>
+  <node id="6585014732" lat="27.7407558" lon="85.3269269">
+    <tag k="bench" v="no"/>
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="lit" v="no"/>
+    <tag k="name" v="Shahenshah Micro Bus Stop"/>
+    <tag k="public_transport" v="platform"/>
+    <tag k="shelter" v="no"/>
+  </node>
+  <node id="6749192585" lat="27.6935287" lon="85.2195419">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Thankot bus stop"/>
+    <tag k="operator" v="Thankot Samiti"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="6945144593" lat="27.7178762" lon="85.3067864">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Tourist Bus Pokhara"/>
+  </node>
+  <node id="7005527686" lat="27.6246612" lon="85.3553416">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="सिद्धि बिनायक मन्दिर"/>
+    <tag k="operator" v="स्थानिय बसिन्दा"/>
+  </node>
+  <node id="7076752192" lat="27.6621751" lon="85.3171035">
+    <tag k="bench" v="no"/>
+    <tag k="bin" v="no"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Mahalaxmisthan bus stop"/>
+    <tag k="shelter" v="no"/>
+  </node>
+  <node id="7123788493" lat="27.7627674" lon="85.3305808">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="saibaba chowk tokha"/>
+  </node>
+  <node id="7274254586" lat="27.6893207" lon="85.2843216">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Khasi Bazar Bus Stop"/>
+  </node>
+  <node id="7285256585" lat="27.6875847" lon="85.3975115">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Gankhu bus stop"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="7285256685" lat="27.6835043" lon="85.3960973">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Gankhu bus stop"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="7285292985" lat="27.6855374" lon="85.3970920">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Gankhu height bus stop"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="7285292986" lat="27.6886610" lon="85.3954387">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Gankhu bus stop"/>
+  </node>
+  <node id="7285293085" lat="27.6919687" lon="85.3941340">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Gankhu bus stop"/>
+  </node>
+  <node id="7285293086" lat="27.6885962" lon="85.3980538">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Gankhu bus stop"/>
+  </node>
+  <node id="7293658985" lat="27.7311806" lon="85.3756365">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Arubari Chowk"/>
+    <tag k="name:hi" v="आरुबारी चोक"/>
+  </node>
+  <node id="7658767485" lat="27.7449232" lon="85.3075530">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="शुभकामना चोक Shubhakamana Chowk"/>
+  </node>
+  <node id="7658767786" lat="27.7537391" lon="85.3164571">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Dhaeshwor Bridge धनेश्वर पुल"/>
+  </node>
+  <node id="7811580385" lat="27.6220930" lon="85.3251179">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Dhapakhel Bus Park"/>
+    <tag k="operator" v="public bus park"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="8209853673" lat="27.7047173" lon="85.3936882">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Mulpani Pipalbot"/>
+  </node>
+  <node id="8210179497" lat="27.6965361" lon="85.3797897">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="8276589918" lat="27.7474212" lon="85.3957345">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Sundole"/>
+  </node>
+  <node id="9412182417" lat="27.7007581" lon="85.3233339">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="New Plaza Stop"/>
+  </node>
+  <node id="9524374618" lat="27.7286529" lon="85.3249144">
+    <tag k="bench" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Bus Stop"/>
+    <tag k="shelter" v="yes"/>
+  </node>
+  <node id="9611991101" lat="27.6368959" lon="85.3882326">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Bhujungey Bus Stop"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="9612975124" lat="27.6654600" lon="85.2547533">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Babita's home"/>
+  </node>
+  <node id="9642624139" lat="27.6516767" lon="85.2861636">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Lausi ko bota"/>
+  </node>
+  <node id="9801832406" lat="27.6696067" lon="85.2875627">
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="9925905717" lat="27.6649919" lon="85.3591851">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="खरिबोट"/>
+    <tag k="name:en" v="Kharibot"/>
+  </node>
+  <node id="9925905817" lat="27.6650126" lon="85.3573640">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="मोति चोक"/>
+    <tag k="name:en" v="Moti chowk"/>
+  </node>
+  <node id="10065424117" lat="27.6735651" lon="85.3868284">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Timi Bus Stop"/>
+  </node>
+  <node id="10228706017" lat="27.7033527" lon="85.3139181">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Tempu per Pashupathinat"/>
+  </node>
+  <node id="10248856809" lat="27.6547248" lon="85.3755793">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="मिलन चौक"/>
+    <tag k="name:en" v="Milan Chowk"/>
+  </node>
+  <node id="10277746691" lat="27.6963323" lon="85.2145904">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="थानकोट बस पार्क"/>
+    <tag k="name:en" v="Thankot bus park"/>
+    <tag k="name:ne" v="थानकोट बस पार्क"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="10294774674" lat="27.7011746" lon="85.3789302">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Force park"/>
+    <tag k="public_transport" v="platform"/>
+  </node>
+  <node id="10611337606" lat="27.7059970" lon="85.3707193">
+    <tag k="bench" v="no"/>
+    <tag k="bin" v="no"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Maan Taar"/>
+    <tag k="shelter" v="yes"/>
+  </node>
+  <node id="10611337613" lat="27.7038032" lon="85.3835999">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Fikal chowk"/>
+  </node>
+  <node id="10611337915" lat="27.7069627" lon="85.3788303">
+    <tag k="bench" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Tejbinayak chowk"/>
+    <tag k="shelter" v="yes"/>
+  </node>
+  <node id="10611337916" lat="27.7076182" lon="85.3830911">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Khurshani Chowk"/>
+  </node>
+  <node id="10611340506" lat="27.7068457" lon="85.3801385">
+    <tag k="bench" v="no"/>
+    <tag k="bin" v="no"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Pipal bot"/>
+    <tag k="shelter" v="yes"/>
+  </node>
+  <node id="10614017211" lat="27.6992948" lon="85.3829791">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Bista gau bus stop"/>
+  </node>
+  <node id="10614866510" lat="27.7068973" lon="85.3772254">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Aadarsh Tole"/>
+  </node>
+  <node id="10614867805" lat="27.7107389" lon="85.3738112">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Bhirbhadra Chowk"/>
+  </node>
+  <node id="10614867905" lat="27.7098804" lon="85.3717135">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Ramnagar-chiplegaida chowk"/>
+  </node>
+  <node id="10617742008" lat="27.6974438" lon="85.3815714">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Om Nagar Society"/>
+  </node>
+  <node id="10685761805" lat="27.7351123" lon="85.3313234">
+    <tag k="bench" v="no"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Teaching Hospital"/>
+    <tag k="shelter" v="no"/>
+  </node>
+  <node id="10736560774" lat="27.6842590" lon="85.2974460">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Balkhu"/>
+    <tag k="public_transport" v="bus_stop"/>
+  </node>
+  <node id="10814739406" lat="27.7260707" lon="85.3031511">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Waiting area night bus"/>
+  </node>
+  <node id="11021710172" lat="27.7783653" lon="85.3604436">
+    <tag k="addr:city" v="Budhanilkantha Municipality"/>
+    <tag k="addr:place" v="Deula-05"/>
+    <tag k="addr:street" v="Budhanilkantha Mandir"/>
+    <tag k="amenity" v="bus_station"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Budhanilkantha Bus Station"/>
+  </node>
+  <node id="11072488905" lat="27.6888871" lon="85.3602385">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Pepsicola Bus Stop"/>
+  </node>
+  <node id="11158532306" lat="27.6849089" lon="85.2965394">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Balkhu"/>
+  </node>
+  <node id="11178669937" lat="27.7563358" lon="85.3170357">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name:en" v="Dhalmal"/>
+  </node>
+  <node id="11962110670" lat="27.7270375" lon="85.3685497">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Tinchuli"/>
+  </node>
+  <node id="11962120769" lat="27.7259504" lon="85.3628892">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Ramhiti"/>
+  </node>
+  <node id="11962120770" lat="27.7242827" lon="85.3568315">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Mahankal"/>
+  </node>
+  <node id="11962125369" lat="27.7221892" lon="85.3539447">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Pani Tankey"/>
+  </node>
+  <node id="12832655801" lat="27.7186881" lon="85.3085466">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Sauraha Tourist Bus"/>
+  </node>
+  <node id="12846647143" lat="27.6765844" lon="85.3465130">
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Bus to the East, Mechinagar"/>
+  </node>
+
+</osm>
