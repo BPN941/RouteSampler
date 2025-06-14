@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bus Stops Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    />
+    <style>
+      #map {
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script>
+      const map = L.map("map").setView([27.7, 85.3], 13);
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: "© OpenStreetMap contributors",
+      }).addTo(map);
+
+      const selectedStops = [];
+      let routeLine = null;
+
+      const apiKey = "API_KEY"; // Replace with your OpenRouteService key
+
+      function getRoute(start, end) {
+        fetch(
+          "https://api.openrouteservice.org/v2/directions/driving-car/geojson",
+          {
+            method: "POST",
+            headers: {
+              Authorization: apiKey,
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              coordinates: [
+                [start[1], start[0]], // [lng, lat]
+                [end[1], end[0]], // [lng, lat]
+              ],
+            }),
+          }
+        )
+          .then((res) => res.json())
+          .then((data) => {
+            const coords = data.features[0].geometry.coordinates.map((c) => [
+              c[1],
+              c[0],
+            ]);
+
+            if (routeLine) {
+              map.removeLayer(routeLine);
+            }
+
+            routeLine = L.polyline(coords, { color: "blue", weight: 5 }).addTo(
+              map
+            );
+            map.fitBounds(routeLine.getBounds());
+          })
+          .catch((err) => {
+            console.error("Error fetching route:", err);
+          });
+      }
+
+      fetch("bus_stops.json")
+        .then((res) => res.json())
+        .then((data) => {
+          data.forEach((stop) => {
+            const marker = L.marker([stop.lat, stop.lon])
+              .addTo(map)
+              .bindPopup(stop.name)
+              .on("click", () => {
+                selectedStops.push([stop.lat, stop.lon]);
+
+                if (selectedStops.length === 2) {
+                  getRoute(selectedStops[0], selectedStops[1]);
+                  selectedStops.length = 0; // Reset after two
+                }
+              });
+          });
+        });
+    </script>
+  </body>
+</html>

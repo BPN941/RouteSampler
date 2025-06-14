@@ -65,7 +65,7 @@
     ]
   },
   {
-    "name": "Route 6: Mahalaxmisthan to ratnapark",
+    "name": "Route 6: Mahalaxmisthan to Sita Petrol Pump Stop",
     "color": "cyan",
     "stops": [
       { "lat": 27.66139332, "lon": 85.31821974, "name": "mahalaxmisthan" },
@@ -73,12 +73,11 @@
       { "lat": 27.66425023, "lon": 85.314392, "name": "Kusunti Bus Stop" },
       { "lat": 27.66788817, "lon": 85.3068109, "name": "Ekantakunna Bus Stop" },
       { "lat": 27.68418164, "lon": 85.30168469, "name": "Sanepa Bus Stop" },
-      { "lat": 27.68425502, "lon": 85.29731729, "name": "Balkhu Wari" },
-      { "lat": 27.68522556, "lon": 85.29816674, "name": "Balkhu Pari" },
-      { "lat": 27.69827038, "lon": 85.29937482, "name": "Kalimati Bus Stop" },
-      { "lat": 27.69630007, "lon": 85.30699268, "name": "Teku" },
-      { "lat": 27.69398864, "lon": 85.31314353, "name": "Tripureswor" },
-      { "lat": 27.70076884, "lon": 85.31336937, "name": "ratnapark" }
+      {
+        "lat": 27.68826239,
+        "lon": 85.28666049,
+        "name": "Sita Petrol Pump Stop"
+      }
     ]
   }
 ]

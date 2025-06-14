@@ -36,12 +36,37 @@
       let selectedStops = [];
       let routeLayer;
       let predefinedRoutes = [];
+      let routeLayers = [];
+
+      const stopToRoutes = new Map();
+      const stopGraph = new Map();
 
       // Load predefined routes
       fetch("bus_routes.json")
         .then((res) => res.json())
         .then((routes) => {
           predefinedRoutes = routes;
+
+          routes.forEach((route) => {
+            route.stops.forEach((stop, index) => {
+              const key = `${stop.lat},${stop.lon}`;
+
+              // Map stop to its routes
+              if (!stopToRoutes.has(key)) stopToRoutes.set(key, []);
+              stopToRoutes.get(key).push(route);
+
+              // Build stop graph: link with previous and next stops
+              if (!stopGraph.has(key)) stopGraph.set(key, []);
+
+              if (index > 0) {
+                const prev = route.stops[index - 1];
+                const prevKey = `${prev.lat},${prev.lon}`;
+                if (!stopGraph.has(prevKey)) stopGraph.set(prevKey, []);
+                stopGraph.get(key).push({ stop: prev, route });
+                stopGraph.get(prevKey).push({ stop, route });
+              }
+            });
+          });
 
           // Extract all unique stops for markers
           const allStops = [];
@@ -67,27 +92,46 @@
                   (s) => s.lat === stop.lat && s.lon === stop.lon
                 )
               ) {
+                if (selectedStops.length === 2) {
+                  resetRoute();
+                }
                 selectedStops.push(stop);
                 marker.openPopup();
                 updateRoute();
               }
             });
+
             markerCluster.addLayer(marker);
           });
 
           map.addLayer(markerCluster);
         });
 
-      function updateRoute() {
+      async function updateRoute() {
         if (selectedStops.length === 2) {
           const [start, end] = selectedStops;
-          const routeStops = findRouteSubset(start, end);
-          drawRoute(routeStops);
+
+          const direct = findRouteSubset(start, end);
+          if (direct.subset.length > 2 || direct.color !== "gray") {
+            drawRoute(direct.subset, direct.color || "blue");
+            return;
+          }
+
+          // Try multi-route path
+          const path = await findMultiRoutePath(start, end);
+          if (!path || path.length === 0) {
+            alert("No route found via transfers.");
+            return;
+          }
+
+          // Draw each leg separately
+          for (const leg of path) {
+            await drawRoute(leg.stops, leg.color);
+          }
         }
       }
 
       function findRouteSubset(start, end) {
-        // Find a predefined route containing both start and end stops
         for (const route of predefinedRoutes) {
           const stops = route.stops;
           const startIndex = stops.findIndex(
@@ -98,24 +142,34 @@
           );
 
           if (startIndex !== -1 && endIndex !== -1 && startIndex <= endIndex) {
-            // Return the subset of stops from start to end
-            return stops.slice(startIndex, endIndex + 1);
+            return {
+              subset: stops.slice(startIndex, endIndex + 1),
+              color: route.color,
+            };
           }
         }
 
-        // Fallback: direct route if no predefined route found
-        return [start, end];
+        return { subset: [start, end], color: "gray" }; // fallback
       }
 
       function resetRoute() {
         selectedStops = [];
-        if (routeLayer) {
-          map.removeLayer(routeLayer);
-          routeLayer = null;
-        }
+
+        // Remove all route layers
+        routeLayers.forEach((layer) => {
+          map.removeLayer(layer);
+        });
+        routeLayers = [];
+
+        // (optional: keep this for extra safety)
+        map.eachLayer((layer) => {
+          if (layer instanceof L.Polyline && !(layer instanceof L.Marker)) {
+            map.removeLayer(layer);
+          }
+        });
       }
 
-      async function drawRoute(stops) {
+      async function drawRoute(stops, color = "blue") {
         const routeCoords = await fetchRouteFromAPI(stops);
         if (routeCoords.length === 0) {
           alert(
@@ -124,12 +178,9 @@
           return;
         }
 
-        if (routeLayer) {
-          map.removeLayer(routeLayer);
-        }
-
-        routeLayer = L.polyline(routeCoords, { color: "blue" }).addTo(map);
-        map.fitBounds(routeLayer.getBounds());
+        const polyline = L.polyline(routeCoords, { color }).addTo(map);
+        routeLayers.push(polyline); // Store the layer
+        map.fitBounds(polyline.getBounds());
       }
 
       async function fetchRouteFromAPI(stops) {
@@ -139,7 +190,7 @@
           const res = await fetch(url, {
             method: "POST",
             headers: {
-              Authorization: "API_KEY", // Replace with a valid key
+              Authorization: "APi_KEY", // Replace with a valid key
               "Content-Type": "application/json",
             },
             body: JSON.stringify({
@@ -157,6 +208,62 @@
           console.error("Error fetching route:", err);
           return [];
         }
+      }
+
+      async function findMultiRoutePath(start, end) {
+        const startKey = `${start.lat},${start.lon}`;
+        const endKey = `${end.lat},${end.lon}`;
+
+        const visited = new Set();
+        const queue = [{ key: startKey, path: [{ stop: start, route: null }] }];
+
+        while (queue.length > 0) {
+          const { key, path } = queue.shift();
+          if (visited.has(key)) continue;
+          visited.add(key);
+
+          if (key === endKey) {
+            // Convert to segments by route
+            const segments = [];
+            let currentLeg = { color: null, stops: [] };
+
+            for (let i = 0; i < path.length - 1; i++) {
+              const curr = path[i];
+              const next = path[i + 1];
+
+              const edge = stopGraph
+                .get(`${curr.stop.lat},${curr.stop.lon}`)
+                .find(
+                  (e) =>
+                    e.stop.lat === next.stop.lat && e.stop.lon === next.stop.lon
+                );
+
+              const route = edge?.route || curr.route;
+              if (!currentLeg.color || route.color !== currentLeg.color) {
+                if (currentLeg.stops.length > 1) segments.push(currentLeg);
+                currentLeg = { color: route.color, stops: [curr.stop] };
+              }
+
+              currentLeg.stops.push(next.stop);
+            }
+
+            if (currentLeg.stops.length > 1) segments.push(currentLeg);
+            return segments;
+          }
+
+          const neighbors = stopGraph.get(key) || [];
+          neighbors.forEach(({ stop, route }) => {
+            const stopKey = `${stop.lat},${stop.lon}`;
+            if (!visited.has(stopKey)) {
+              queue.push({
+                key: stopKey,
+                path: [...path, { stop, route }],
+              });
+            }
+          });
+        }
+
+        return null; // No path found
       }
 
       document

@@ -12,7 +12,6 @@ const apiKey = process.env.API_key;
 const interval = 100; // meters
 
 const coordinates = [
-  //[85.30127415067481, 27.684353257350377], // [lng, lat] for Blakhu Bus stop
   [85.28180826032701, 27.67707800405618], // [lng, lat] for Kirtipur gate Bus Stop
   [85.30127415067481, 27.684353257350377], // [lng, lat] for Blakhu Bus stop
 ];
